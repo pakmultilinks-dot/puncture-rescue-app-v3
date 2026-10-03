@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Patchlane \u00b7 Puncture Demo",
+    "slug": "patchlane-puncture-demo-v3",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "description": "Local-only motorcycle puncture help prototype with fictional sample listings.",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Patchlane to check your location once in the foreground after you tap to look for nearby help."
+        }
+      ]
+    ]
+  }
+}

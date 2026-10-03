@@ -1,0 +1,9 @@
+# Research notes
+
+The product boundary for v3 comes from the owner's clarification: when a motorcycle has a puncture, the rider needs puncture help; whether the mechanic is an individual or a shop does not matter. That is a product requirement, not a market finding. The rider flow therefore has no provider-type distinction, and the listing preview uses one shared name field rather than separate person/shop paths.
+
+The v2 notes captured two narrow public signals that remain relevant to the problem framing. A 2023 archived [r/Lahore post](https://www.reddit.com/r/Lahore/comments/137ghko/can_you_recommend_any_online_service_for_bike/) describes one rider seeking online bike puncture/breakdown help when a nearby shop or petrol pump was unavailable. It is one anecdote, not a demand estimate. A March 2023 [The Nation report citing APP](https://www.nation.com.pk/11-Mar-2023/mobile-puncture-shops-gain-popularity-among-citizens) describes motorcycle-based mobile puncture mechanics in Islamabad/Rawalpindi taking calls for on-demand work. Its historical example does not establish current availability, prices or supply elsewhere.
+
+For location design, [Android's location guidance](https://developer.android.com/develop/sensors-and-location/location/permissions) supports foreground, user-initiated location access and approximate-location-compatible design. v3 keeps the manual landmark route available if access is denied. The prototype's sample results deliberately do not use coordinates; its distances, names, availability and arrival times are fabricated interface examples.
+
+These signals only support that some riders have described this problem and that mobile puncture mechanics have been reported in one market. They do not establish the size or urgency of demand, current local provider coverage, pricing, willingness to pay, business viability, or the absence of competitors. No live-provider or market data has been added to v3.
