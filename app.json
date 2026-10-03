@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Patchlane \u00b7 Puncture Demo",
+    "name": "Patchlane · Puncture Demo",
     "slug": "patchlane-puncture-demo-v3",
     "version": "3.0.0",
     "orientation": "portrait",
@@ -10,7 +10,12 @@
       "supportsTablet": true
     },
     "android": {
-      "predictiveBackGestureEnabled": false
+      "package": "com.kominman.patchlane",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -23,6 +28,12 @@
           "locationWhenInUsePermission": "Allow Patchlane to check your location once in the foreground after you tap to look for nearby help."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a6398fe5-6703-4aeb-b926-2f6448eed963"
+      }
+    },
+    "owner": "kominman"
   }
 }
