@@ -1,6 +1,6 @@
 # Test report
 
-**Run date:** 2026-10-03. **Target:** local Expo/React Native web export for Patchlane v3. No live provider, account, backend, map, dialer, messaging, request, notification, payment or publishing service was connected.
+**Run date:** 2026-10-03. **Target:** local Expo/React Native web export for Patchlane v3. These checks exercised only the local prototype; no live provider, backend, map, dialer, messaging, request, notification or payment service was connected. The source repository was subsequently published publicly on [GitHub](https://github.com/pakmultilinks-dot/puncture-rescue-app-v3).
 
 ## Results
 
@@ -12,7 +12,7 @@
 
 The six browser groups verified the puncture-only start and that no location permission check occurs before the button tap; one mocked granted, one-time location check; denied-location manual fallback; synthetic results and the no-results recovery; mechanic profile with call/request/cancel simulations and no outgoing external requests; and unified listing form validation/preview with no provider-type chooser or alternate signup path. Responsive screens at 360, 390, 430 and 768 px had no horizontal overflow. Every visible button checked on home, denied fallback, results, no-results, profile, request and signup was at least **48 px** tall.
 
-The in-app browser also opened the fresh temporary review origin and confirmed the list/profile/request path, the “no number was dialled” call message, and the local cancelled-preview state. That temporary QA server was stopped after verification; the app was not published or deployed.
+The in-app browser also opened the fresh temporary review origin and confirmed the list/profile/request path, the “no number was dialled” call message, and the local cancelled-preview state. That temporary QA server was stopped after verification; these checks did not deploy an app binary or live service.
 
 Seven screenshots were regenerated, visually inspected for crop/clipping and verified as **390 × 844 px**: rider start, denied-location fallback, nearby mechanics, mechanic profile, request status/cancel preview, no-results recovery and unified mechanic listing. The tests mock browser geolocation permission responses, so they validate the app path without reading or transmitting a real coordinate.
 
@@ -22,4 +22,4 @@ No iOS simulator, Android emulator or physical device was used. Native permissio
 
 `npm audit` reported **23 advisories: 16 high, 7 moderate, 0 critical**. `npm audit --omit=dev` returned the same totals. Findings include direct Expo and React Native packages plus Expo CLI/config/Metro dependency chains; transitive notices include `node-forge`, `braces`/`micromatch`, `uuid` and `xcode`. Because resolution requires compatibility review against the Expo/React Native SDK versions, no broad automatic upgrade was applied. Review the advisories and plan targeted, SDK-compatible updates before any production use.
 
-No live location was requested during verification. No public deployment, Expo publication, GitHub push, account, provider contact or real-data test was performed.
+No live location was requested during verification. No app-store release, public app deployment, Expo build or publication, provider contact, or real-data test was performed. The public GitHub repository contains source and documentation, not a live service.
